@@ -1,0 +1,79 @@
+    /*CSS (Cascading Style Sheets) - Sempre irá dar prioridade para o atributo que tiver mais força, ou seja tiver o maior número de especificações. Ex.:
+    Se eu colocar um id no body e dizer que o h1 dentro dele deve ser cinza, e depois informar que todo h1 deve ser vermelho, o h1 dentro do body será cinza, pois eu estou especificando que todo h1 dentro do body deve ser cinza.
+    E ainda existe a priorização por seletor: id, class e tag.
+     */
+     
+     /*
+#container{ -> Defino as propriedades de um id chamado container.
+    border: 1px solid red; /*Borda do container/repartição
+    padding: 40px; /*Preenchimento entre o conteúdo e as bordas do container. Seguem na ordem em cima, direita, embaixo, esquerda (sentido horário) Se deixa somente 1 valor, ele aplica para os 4 lados.
+    margin: 60px; /*Margem, que é a parte externa do container.
+
+    width: 300px; /*Largura
+    height: 300px; /*Altura
+}   */
+
+:root {  
+    
+    /*Criando uma matriz de variáveis que recebem as cores, apenas para serem invocadas pelo nome*/
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #5F0909;
+    --color-secundary: #04D361;
+    --color-secundary-dark: #04BD58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #DAC2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+    /* Tamanho de fonte padrão: 100% - 16px - 1rem */
+    font-size: 60%; /*Controle das medidas rem*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100vh; /*Deixa um espaço de 100 pontos dentro da área de visualização da tela. O conteúdo que é apresentado em tela é quebrado em pontos e utiliza esses pontos como referência.*/
+}
+
+body{
+    background-color: var(--color-background);
+    display: flex; /*Exibe os elementos um ao lado do outro, mesmo para os elementos que naturalmente ocupariam uma linha sozinho*/
+    align-items: center; /*Alinha os itens no centro da caixa (levando em consideração altura)*/
+    justify-content: center; /*Alinha os itens ao centro/meio da caixa*/
+}
+
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Poppins; /*font-weight / font-size / font-family*/
+    color: var(--color-text-base);
+}
+
+button{
+    border-radius: 7px;
+    padding-left: 4px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+#container {
+    width: 90vw;
+    max-width:700px;
+}

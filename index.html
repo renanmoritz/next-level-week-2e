@@ -1,0 +1,38 @@
+<!-- O HTML (HyperText Markup Language) é estruturado por TAGs, que possuem uma abertura e normalmente possuem um fechamento para encapsular um determinado conteúdo Ex.: <h1> </h1> -->
+<!-- <!DOCTYPE html> - Essa TAG não possui fechamento e é utilizada par que os navegadores entenderão que será utilizado o HTML 5 -->
+<!-- <html> - Exemplo da abertura da TAG chamada HTML -->
+<!-- <head> - Todas as configurações do documento/arquivo devem estar contidas dentro da TAG head -->
+<!-- <body> - Todo o conteúdo visível na página deve estar contido dentro da TAG body -->
+<!-- </html> - Exemplo do fechamento da TAG chamada HTML -->
+
+<!DOCTYPE html>
+<html lang="pt_br"> <!-- lang é um atributo que define o idioma que será usado no do HTML -->
+<head>
+    <meta charset="UTF-8"> <!-- Define que o tipo de texto que será utilizado será o UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- TAG para manipular a resolução que a página será exibida -->
+    <title>Proffy | Sua plataforma de estudos online!</title> <!-- Título que será exibido na Aba do navegador -->
+<!-- TAG Style para eu definir a área que será utilizada as configurações do CSS -->
+<!-- Posso separar a utilização do CSS por diversas categorias. Como por exemplo class (simbolizado por .), id (simbolizado por #) 
+    class pode ser utilizado em mais de uma TAG, enquanto o id só pode ser único por tag utilizada. 
+-->    
+
+    <link rel="stylesheet" href="/style.css"> <!-- Faz a chamada do arquivo que possui as configurações do CSS. Ao informar a / eu digo que está na raiz do meu projeto -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"> <!-- Nesse projeto, busca no google fontes a fonte que será utilizada no site -->
+
+</head>
+<body id="page-landing">
+
+    <div id="container"> <!-- Div é uma TAG para ser utilizada como container de um conteúdo -->
+
+        <h1>Proffy</h1> <!-- TAG para definir um título de texto. Existem outros como <h2>, <h3>... <H6> -->
+        <p>Sua plataforma de estudos online.</p> <!-- TAG para definir um parágrafo -->
+        
+        <img src="" alt="Logo"> <!-- TAG para inserir uma imagem na página. O atributo 'alt' serve para colocar uma legenda ou conteúdo da página para pessoas que usam acessibilidade -->
+        
+        <button>Estudar</button> <!-- TAG para criar um botão na página -->
+        <button>Dar Aulas</button>
+
+    </div>    
+
+</body>
+</html>
